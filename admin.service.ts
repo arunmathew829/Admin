@@ -47,7 +47,7 @@ export class AdminService {
   }
   async findOne(username: string): Promise<Admin | undefined> {
     // return this.User.find((User) => User.username === username);
-//return this.UserRepository.findOne((User)=>User.username ===username)
+//return this.AdminRepository.findOne((User)=>User.username ===username)
     return this.AdminRepository.findOne({where:{user.username === username}} );
   }
 }
